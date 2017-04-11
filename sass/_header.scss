@@ -1,0 +1,234 @@
+// html, body {
+//     max-width: 100%;
+//     overflow-x: hidden;
+// }
+// header
+header{
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/header_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .row{
+    padding:0;
+    margin:0;
+  }
+  .logo_i{
+    background-image: url(../img/header_logo.png);
+    height: 110px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+  }
+  @media(max-width: 1024px){
+    .logo_i{
+      margin-left: 0;
+      position: relative;
+      background-image: url(../img/logo_pl.png);
+      background-repeat: no-repeat;
+      height: 33px;
+      width: 60px;
+    }
+    .logo_i:after{
+      content: 'urban Development Group';
+      font-size: 10px;
+      position: absolute;
+      left: 65px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+  // nav
+  nav{
+    height: 130px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // ul
+    ul{
+      position: absolute;
+      right: 0;
+      list-style: none;
+      li{
+        margin-right: 50px;
+        display: inline-block;
+        a{
+          font-size: 17px;
+          color: #ecf0e8;
+          font-family: roboto-light;
+          text-decoration: none;
+          transition: all 0.3s;
+        }
+        a:hover{
+          color: #ecf0e8;
+          text-decoration: none;
+          border-top: 1px solid #bed62f;
+          padding-top: 8px;
+        }
+      }
+      li:nth-child(7){
+        border: 1px solid #bed62f;
+        padding: 5px 8px;
+        a{
+          transition: none;
+          border: none;
+        }
+      }
+    }// ul
+    .mob_menu{
+      display: none;
+    }
+  }// nav
+  .dis_sea{
+    display: none;
+    .close_sea{
+      background-image: url(../img/close_search.png);
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      right: 15px;
+      bottom: 0;
+    }
+  }
+  .search_input{
+    position: absolute;
+    font-size: 15px;
+    top: 100px;
+    width: 25%;
+    height: 45px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    text-align: center;
+    color: #fff;
+  }
+  .search_input::-webkit-input-placeholder{
+    color: #fff;
+  }
+  #overlay{
+    display: none;
+  }
+  @media(max-width: 1024px){
+    nav{
+      height: 75px;
+      border-bottom: 1px solid #fff;
+      ul{
+        right: -15px;
+        li{
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+  // header_content
+  .header_content:before{
+    position: absolute;
+    content: url(../img/lineg.png);
+  }
+  .header_content{
+    position: relative;
+    height: 400px;
+    width: 680px;
+    margin: 0 auto;
+    padding-top: 100px;
+    #slider{
+      .carousel {
+        margin: 0 60px; /* space for prev/next buttons */
+      }
+      .carousel-cell {
+        width: 100%;
+        height: 200px;
+        margin-right: 10px;
+        color: #fff;
+        font-size: 65px;
+        padding-top: 15px;
+        i{
+          color: #fff;
+          font-size: 14px;
+          position: absolute;
+          top: -4px;
+          left: 30px;
+          span{
+            font-size: 23px;
+          }
+          .act{
+            color: #8dc63f;
+          }
+          .z{
+            padding-left: 5px;
+          }
+        }
+      }
+      /* smaller, dark, rounded square */
+    .flickity-prev-next-button{
+      position: absolute;
+      background: rgba(0, 0, 0, 0);
+      cursor: pointer;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      opacity: 1;
+      svg{
+        opacity: 0;
+      }
+    }
+      .flickity-page-dots{
+        display: none;
+      }
+      .previous{
+        left: 0;
+        top: 10px;
+        background-image: url(../img/left.png);
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+        height: 20px;
+      }
+      .next{
+        left: 70px;
+        top: 3px;
+        background-image: url(../img/left.png);
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        height: 20px;
+      }
+    }
+  }// header_content
+  @media(max-width: 1024px){
+    .header_content{
+      position: relative;
+      height: 260px;
+      width: 580px;
+      margin: 0 auto;
+      margin-top: 220px;
+      #slider{
+        .carousel-cell{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  // maus_header
+  .maus_header{
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transition: all 0.5s;
+    a{
+      cursor: pointer;
+      img{
+        height: 40px;
+        width: 28px;
+      }
+    }
+  }// maus_header
+  .maus_header:hover{
+    bottom: 35px;
+  }
+}// header
+
+@media (max-width: 1024px) {
+  header{
+    background-image: url(../img/bg_pl.png);
+  }
+}

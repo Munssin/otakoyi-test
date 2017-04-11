@@ -1,0 +1,45 @@
+@media(max-width:569px){
+  #numbers{
+    .numbers:before{
+      content:"";
+      position: absolute;
+      left: -10px;
+    }
+    .second_num:before{
+      content:url(../img/lineg.png);
+      position: absolute;
+      left: 165px;
+      top: -80px;
+      transform: rotate(90deg);
+    }
+    .numbers{
+      padding: 70px 15px;
+        .nam{
+          font-size: 75px;
+        }
+        p{
+          font-size: 17px;
+        }
+    }
+    .second_num:after{
+      content:url(../img/lineg.png);
+      position: absolute;
+      left: 165px;
+      top: 220px;
+      transform: rotate(90deg);
+    }
+    .last_num:after{
+      content:"";
+    }
+  }
+}
+@media(max-width:330px){
+  #numbers{
+    .second_num:before{
+      left: 150px;
+    }
+    .second_num:after{
+      left: 150px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@media(max-width:569px){
+  footer{
+    .container{
+      padding-left: 0;
+    }
+    #contact{
+      h2:before{
+        left: 40px;
+      }
+      h2{
+        font-size: 26px;
+        max-width: 320px;
+        padding-left: 14%;
+      }
+      .contact_info{}
+    }
+    #write{
+      padding-left: 0;
+      h2:before{
+        position: absolute;
+        content: url(../img/wwa_bef.png);
+        left: 40px;
+        top: 0;
+      }
+      h2{
+        position: relative;
+        font-size: 26px;
+        max-width: 320px;
+        padding-left: 0;
+      }
+      form{
+        .input{
+          max-width: 300px;
+          margin: 0 8%;
+        }
+        .last_f_in{
+          max-width: 250px;
+          margin: 0 8%;
+        }
+      }
+      .btn{
+        cursor: pointer;
+        background-color: #439c92;
+        color: #fff;
+        width: 300px;
+        font-size: 16px;
+        padding: 15px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    #footer{
+      background-color: rgba(0, 0, 0, 0);
+      .copy1{
+        font-size: 14px;
+        color: #c3c3c3;
+        background-color: #439c92;
+        padding-left: 0;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+      }
+      .soc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        padding-top: 0;
+      }
+      .ota{
+        display: flex;
+        width: 100%;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+        padding-right: 0;
+        h6{
+          position: relative;
+          font-size: 12.71px;
+          color: #c2c2c2;
+          a{
+            text-decoration: none;
+            color: #c2c2c2;
+          }
+        }
+        h6:after{
+          position: absolute;
+          content: url(../img/ot.png);
+          top: -3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+section{
+  background-color: #fff;
+}
+// who_we_are
+#who_we_are{
+  width: 100%;
+  background-image: url(../img/bg2.png);
+  background-repeat: no-repeat;
+  padding-top: 98px;
+  .container{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 145px;
+    .mob_who_we_are{
+      display: none;
+    }
+  }
+  h2:before{
+    content: url(../img/wwa_bef.png);
+    position: absolute;
+    left: -52px;
+    top: -20px;
+  }
+  h2{
+    position: relative;
+    font-size: 45px;
+    font-family: 'Acrom' extrabold;
+    color: #414042;
+    max-width: 218px;
+    padding-bottom: 45px;
+  }
+  // who_we_are
+  .who_we_are{
+    p{
+      font-size: 17px;
+      font-family: 'roboto';
+      color: #727374;
+      line-height: 2.4;
+    }
+    a{
+      text-decoration: none;
+      p{
+        position: relative;
+        max-width: 90px;
+        color: #439c92;
+        font-size: 15px;
+        border-bottom: 1px solid #439c92;
+      }
+      p:after{
+        content: url(../img/read_more.png);
+        position: absolute;
+        right: -30px;
+      }
+    }
+  }// who_we_are
+  .wwa_foto{
+    position: relative;
+    background-image: url(../img/wwa_foto.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 350px;
+    margin-left: 60px;
+    -webkit-box-shadow: 0px 0px 78px -10px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 0px 78px -10px rgba(0,0,0,0.69);
+    box-shadow: 0px 0px 78px -10px rgba(0,0,0,0.69);
+  }
+  .wwa_foto:after{
+    content: url(../img/wwa_aft.png);
+    position: absolute;
+    right: -30px;
+    top: -45px;
+  }
+}// who_we_are
+@media(max-width: 869px){
+  #who_we_are{
+    .mob_who_we_are{
+      display: none;
+    }
+    .who_we_are{
+      padding-top: 420px;
+    }
+    .wwa_foto{
+      position: absolute;
+      top: -800px;
+      left: -35px;
+    }
+  }
+}

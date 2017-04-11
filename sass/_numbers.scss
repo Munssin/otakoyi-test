@@ -1,0 +1,48 @@
+#numbers{
+  // height: 340px;
+  background-repeat: no-repeat;
+  background-image: url(../img/numbers_bg.png);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 95px;
+  .container{
+    // width: 900px;
+    margin: 0 auto;
+    }
+    .first_num:before{
+      content:url(../img/lineg.png);
+      position: absolute;
+      left: -10px;
+    }
+    .numbers:before{
+      content:url(../img/lineg.png);
+      position: absolute;
+      left: -10px;
+    }
+    .numbers{
+      position: relative;
+        color: #fff;
+        text-align: center;
+        padding: 70px 15px;
+        .nam{
+          font-size: 75px;
+        }
+        p{
+          font-size: 19px;
+        }
+    }
+    .last_num:after{
+      content:url(../img/lineg.png);
+      position: absolute;
+      top: 72px;
+      right: -10px;
+    }
+    @media(max-width: 936px){
+      .first_num:before{
+        content:"";
+      }
+      .last_num:after{
+        content:"";
+      }
+    }
+}

@@ -1,0 +1,45 @@
+@media(max-width:569px) {
+  #who_we_are{
+    .pc_who_we_are{
+      h2{
+        font-size: 26px;
+      }
+      .wwa_foto{
+        width: 280px;
+        top: -1180px;
+        left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media(max-width:400px) {
+  #who_we_are{
+    .pc_who_we_are{
+      h2{
+        font-size: 26px;
+      }
+      .wwa_foto{
+        width: 280px;
+        top: -1280px;
+        left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media(max-width:320px) {
+  #who_we_are{
+    .pc_who_we_are{
+      h2{
+        font-size: 26px;
+      }
+      .wwa_foto{
+        width: 280px;
+        top: -1470px;
+        left: -33px;
+        margin-left: 0;
+      }
+    }
+  }
+}
